@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(251, 253, 253);
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+#game-container {
+    font-family: "Story Script", cursive, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#player-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 1.5rem;
+}
+
+#player-inputs label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+#player-inputs input {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 2px solid rgb(64, 128, 184);
+    border-radius: 8px;
+    outline: none;
+}
+
+#player-inputs input:focus {
+    box-shadow: 0 0 0 3px rgba(64, 128, 184, 0.35);
+}
+
+#cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: 0 auto 1rem;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;     
+    border: 2px solid #000;
+    line-height: 71px;          
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px;
+}
+
+#status-text {
+    min-height: 1.5em;
+    font-family: "Playfair Display", sans-serif;
+    margin: 1rem 0;
+}
+
+button {
+    color: white;
+    background-color: rgb(51, 130, 184);
+    border: 2px solid rgb(64, 128, 184);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Playfair Display", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+button:hover {
+    background-color: rgb(64, 128, 184);
+}
+
+button:active {
+    transform: translateY(1px);
+}
